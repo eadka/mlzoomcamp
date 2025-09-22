@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+numpy = "*"
+seaborn = "*"
+jupyter = "*"
+tqdm = "*"
+notebook = "==7.1.2"
+openai = "*"
+elasticsearch = "==8.13.0"
+pandas = "*"
+scikit-learn = "*"
+ipywidgets = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"
