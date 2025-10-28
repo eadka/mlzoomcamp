@@ -1,4 +1,5 @@
 import pickle
+import os
 
 from typing import Dict, Any
 
@@ -20,8 +21,13 @@ app = FastAPI(title="leadscoring-prediction")
 
 
 # --- Load pipeline ---
-with open('pipeline_v1.bin','rb') as f_in:
-    pipeline = pickle.load(f_in)
+try: 
+    with open('pipeline_v1.bin','rb') as f_in:
+        pipeline = pickle.load(f_in)
+except:
+    MODEL_PATH = os.environ.get("MODEL_PATH", "/code/pipeline_v2.bin")  # adjust if different
+    with open(MODEL_PATH, 'rb') as f_in:
+        pipeline = pickle.load(f_in)
 
 
 # --- Prediction function ---
