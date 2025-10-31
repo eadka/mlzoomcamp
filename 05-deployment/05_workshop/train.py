@@ -1,6 +1,3 @@
-# This is a starter notebook for an updated module 5 of ML Zoomcamp
-# 
-# The code is based on the modules 3 and 4. We use the same dataset: [telco customer churn](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
 import pickle
 
 import pandas as pd
