@@ -21,6 +21,8 @@ fastapi = "*"
 uvicorn = "*"
 requests = "*"
 uv = "*"
+tensorflow = "*"
+keras = "*"
 
 [dev-packages]
 awsebcli = "*"
