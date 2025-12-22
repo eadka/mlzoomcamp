@@ -1,21 +1,17 @@
 [project]
 name = "mlzoomcamp"
 version = "0.1.0"
-description = "Churn prediction service"
+description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "fastapi>=0.120.0",
-    "scikit-learn>=1.7.2",
+    "keras-image-helper>=0.0.2",
+    "onnxruntime>=1.23.2",
     "uvicorn>=0.38.0",
-]
-
-[dependency-groups]
-dev = [
-    "requests>=2.32.5",
 ]
 
 [tool.uv.workspace]
 members = [
-    "05-deployment",
+    "10-kubernetes",
 ]
