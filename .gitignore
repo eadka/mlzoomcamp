@@ -210,3 +210,5 @@ __marimo__/
 # ONNX model
 *.onnx
 .venv
+bin/kubectl
+bin/kind
